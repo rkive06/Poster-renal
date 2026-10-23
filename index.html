@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afecciones renales | Póster interactivo</title>
+<style>
+:root{--ink:#51451f;--muted:#746b53;--gold:#b79b47;--cream:#fff9e9;--pale:#f6e8b5;--card:#fff;--line:#e8dfc5}
+*{box-sizing:border-box}body{margin:0;background:#f4eedc;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.poster{max-width:1050px;margin:22px auto;padding:22px;background:var(--cream);border-radius:22px;box-shadow:0 8px 30px #51451f18}
+.hero{background:var(--pale);padding:26px;border-radius:18px;display:flex;gap:20px;align-items:center}
+.kicker{font-size:.8rem;letter-spacing:.12em;font-weight:bold;color:#766024}.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;margin:8px 0;color:var(--ink)}.hero p{margin:0;color:#64552a}
+.icon{font-size:4.2rem;flex-shrink:0}
+section,.names{background:white;border-radius:16px;padding:18px;margin-top:16px}
+h2{font-size:1.25rem;margin:0 0 12px}h3{font-size:1rem;margin:8px 0 4px}
+.names-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.name{background:#fff8df;padding:10px;border-radius:10px;text-align:center;font-size:.95rem}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 10px}.tabs button{border:1px solid var(--line);background:#fff;padding:10px 13px;border-radius:10px;color:var(--ink);font-weight:bold;cursor:pointer}.tabs button[aria-selected="true"],.tabs button:hover{background:var(--pale);border-color:var(--gold)}
+.panel{display:none;background:white;padding:20px;border-radius:16px;border:1px solid var(--line)}.panel.active{display:block}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.tile{background:#fff7dd;border-radius:12px;padding:14px}.tile h3{color:#66501f;margin-top:0}
+ul{padding-left:22px;margin:8px 0}li{margin:7px 0}.message{background:var(--pale);padding:20px;border-radius:14px;margin-top:16px}.message h2{font-size:1.5rem}
+.refs p{font-size:.9rem;overflow-wrap:anywhere}.small{font-size:.86rem;color:var(--muted)}footer{text-align:center;font-size:.8rem;color:var(--muted);padding:16px}
+@media(max-width:650px){.poster{margin:0;padding:12px;border-radius:0}.hero{padding:18px}.icon{font-size:2.8rem}.names-grid{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.tabs button{flex:1 1 42%}}
+@media print{body{background:white}.poster{box-shadow:none;margin:0;max-width:none}.tabs{display:none}.panel{display:block!important;break-inside:avoid;margin-bottom:10px}.hero,section,.names,.panel,.message{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<main class="poster">
+<header class="hero">
+<div class="icon" aria-hidden="true">🩺</div>
+<div><div class="kicker">SALUD PÚBLICA · CASO CLÍNICO</div><h1>AFECCIONES RENALES</h1><p><b>Calor extremo, trabajo agrícola y vulnerabilidad social</b><br>Trabajador de una finca bananera en Tucurinca, Zona Bananera, Magdalena.</p></div>
+</header>
+<div class="names"><h2>Integrantes</h2><div class="names-grid"><div class="name">Daniela Calderon</div><div class="name">Carla Contrera</div><div class="name">Valentina Deluque</div><div class="name">Sara Mozo</div></div></div>
+<h2 style="margin:20px 2px 8px">Explora el análisis</h2>
+<p class="small">Pulsa cada pestaña para ver la síntesis de las preguntas orientadoras.</p>
+<nav class="tabs" role="tablist" aria-label="Secciones del póster">
+<button role="tab" aria-selected="true" data-target="caso">1. Caso clínico</button>
+<button role="tab" aria-selected="false" data-target="mecanismo">2. Fisiopatología</button>
+<button role="tab" aria-selected="false" data-target="riesgo">3. Vulnerabilidad</button>
+<button role="tab" aria-selected="false" data-target="farmacos">4. Medicamentos</button>
+<button role="tab" aria-selected="false" data-target="clima">5. Otros climas</button>
+<button role="tab" aria-selected="false" data-target="prevencion">6. Salud pública</button>
+</nav>
+<section class="panel active" id="caso" role="tabpanel"><h2>¿Qué ocurre con el paciente?</h2>
+<p>Hombre de 39 años, trabajador agrícola, expuesto durante varios días al sol y al esfuerzo físico intenso. Tiene acceso limitado a agua potable y posterga la hidratación para mantener su rendimiento.</p>
+<div class="grid">
+<div class="tile"><h3>💧 Sed y mucosas secas</h3>Signos compatibles con deshidratación.</div>
+<div class="tile"><h3>🧪 Oliguria y orina oscura</h3>Posible compromiso renal; la orina oscura también puede tener otras causas.</div>
+<div class="tile"><h3>❤️ Taquicardia y presión baja-límite</h3>Posible respuesta a la reducción del volumen circulante.</div>
+<div class="tile"><h3>☀️ Calambres y agotamiento</h3>Posibles pérdidas de líquidos y electrolitos por calor y esfuerzo.</div>
+</div><p>También presenta diarrea y menor tolerancia oral tras iniciar un antibiótico. Se sospecha deshidratación importante y posible lesión renal aguda, aún sin confirmación.</p></section>
+<section class="panel" id="mecanismo" role="tabpanel"><h2>¿Cómo puede afectarse el riñón?</h2>
+<div class="tile"><h3>1. Deshidratación e hipoperfusión renal</h3>Sudoración y diarrea → pérdida de líquidos → disminución del volumen circulante → menor perfusión renal y filtración glomerular → oliguria y posible lesión renal aguda.</div>
+<div class="tile" style="margin-top:10px"><h3>2. Hipertermia</h3>La acumulación excesiva de calor puede lesionar directamente las células tubulares renales. No hay temperatura documentada que confirme golpe de calor.</div>
+<div class="tile" style="margin-top:10px"><h3>3. Rabdomiólisis</h3>El esfuerzo intenso puede lesionar el músculo y liberar mioglobina, que contribuye al daño renal. La orina oscura no confirma por sí sola este diagnóstico.</div>
+<p><b>Evaluación clínica:</b> creatinina, electrolitos, examen de orina, diuresis y creatina-cinasa (CK) si se sospecha lesión muscular.</p></section>
+<section class="panel" id="riesgo" role="tabpanel"><h2>¿Por qué se combinan los riesgos?</h2><ul>
+<li><b>Clima:</b> la ola de calor aumenta la carga térmica.</li><li><b>Trabajo:</b> el esfuerzo físico aumenta la producción de calor y la sudoración.</li><li><b>Hidratación:</b> posponer el consumo de agua impide reponer las pérdidas.</li><li><b>Enfermedad y medicamentos:</b> la diarrea y la menor ingesta pueden empeorar el déficit de líquidos.</li><li><b>Vulnerabilidad social:</b> la escasez de agua potable, las exigencias laborales y la distancia de más de una hora al centro de salud dificultan la prevención y la atención temprana.</li></ul>
+<div class="message"><b>Idea central:</b> el riesgo no depende solo de las decisiones individuales; también está determinado por las condiciones laborales, ambientales y territoriales.</div></section>
+<section class="panel" id="farmacos" role="tabpanel"><h2>¿Qué medicamentos deben revisarse?</h2><div class="grid">
+<div class="tile"><h3>Amoxicilina</h3>Puede causar diarrea y agravar la pérdida de líquidos.</div>
+<div class="tile"><h3>Doxiciclina y algunas fluoroquinolonas</h3>Pueden producir náuseas o reacciones relacionadas con la exposición solar, según el fármaco.</div>
+<div class="tile"><h3>AINE (ibuprofeno, naproxeno)</h3>Pueden reducir la perfusión renal cuando hay hipovolemia.</div>
+<div class="tile"><h3>Diuréticos</h3>Pueden influir en el balance de líquidos y requieren revisión clínica.</div></div>
+<p>No se conoce el antibiótico exacto del paciente y no puede afirmarse que haya causado la lesión renal. Se debe revisar el tratamiento con el equipo médico, sin suspenderlo por cuenta propia.</p></section>
+<section class="panel" id="clima" role="tabpanel"><h2>¿Qué cambia según el escenario climático?</h2><div class="grid">
+<div class="tile"><h3>🌵 Sequía</h3>Investigar disponibilidad de agua y saneamiento. Vigilar hidratación, creatinina y diuresis; prevenir mediante agua potable y educación sanitaria.</div>
+<div class="tile"><h3>🌧️ Lluvias e inundaciones</h3>Preguntar por agua contaminada, heridas y contacto con roedores. Considerar leptospirosis si existe exposición compatible y signos de infección; la inundación por sí sola no confirma el diagnóstico.</div>
+<div class="tile"><h3>❄️ Frío intenso</h3>Evaluar temperatura corporal, estado neurológico, hipotermia y circulación. Investigar la función renal según los hallazgos.</div>
+<div class="tile"><h3>🔎 En todos los escenarios</h3>La anamnesis, el examen físico, las pruebas complementarias y el acceso a servicios determinan el juicio diagnóstico.</div></div></section>
+<section class="panel" id="prevencion" role="tabpanel"><h2>¿Qué debe hacer la Salud Pública?</h2><ul>
+<li>Garantizar agua potable accesible durante toda la jornada.</li><li>Establecer pausas de recuperación y zonas de sombra.</li><li>Adaptar horarios y carga física al riesgo térmico.</li><li>Capacitar para reconocer oliguria, mareo, calambres y agotamiento.</li><li>Facilitar atención oportuna, vigilancia renal y rutas de referencia.</li></ul>
+<div class="message"><h2>¡Cuidar al trabajador es proteger sus riñones!</h2><p>La salud debe estar por encima de las metas de producción. La prevención del daño renal comienza con condiciones laborales seguras y una respuesta comunitaria frente al riesgo climático.</p></div></section>
+<section class="refs"><h2>Referencias bibliográficas · APA 7.ª edición</h2>
+<p>Organización Panamericana de la Salud. (s. f.). <i>Texto guía sobre estrés térmico, salud y confort laboral</i>. Referencia exacta pendiente de verificar con el documento original de la asignatura.</p>
+<p>World Health Organization, &amp; World Meteorological Organization. (2025). <i>Climate change and workplace heat stress: Technical report and guidance</i>. World Health Organization. https://www.who.int/publications/i/item/9789240099814</p>
+<p>Centers for Disease Control and Prevention, National Institute for Occupational Safety and Health. (2021). <i>Tome medidas ahora para prevenir las enfermedades relacionadas con el calor en el trabajo</i>. https://www.cdc.gov/niosh/blogs/es/2021/prevenir-las-enfermedades-relacionadas-con-el-calor-en-el-trabajo.html</p>
+</section>
+<footer>Póster académico interactivo · Afecciones renales y determinantes sociales de la salud</footer>
+</main>
+<script>
+const buttons=[...document.querySelectorAll('.tabs button')];
+const panels=[...document.querySelectorAll('.panel')];
+buttons.forEach(btn=>btn.addEventListener('click',()=>{
+ buttons.forEach(b=>b.setAttribute('aria-selected',String(b===btn)));
+ panels.forEach(p=>p.classList.toggle('active',p.id===btn.dataset.target));
+}));
+</script>
+</body></html>
